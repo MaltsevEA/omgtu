@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="maltsev_tasks_2s_zas123.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApplicationTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Мальцев Е.А. (гр. ЗАС-123) - Задачи 2го семестра</Value>
+    </Setting>
+    <Setting Name="Task1Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Дана последовательность слов, разделённых пробелами. Вывести эту же последовательность, удалив из нее повторные вхождения слов.</Value>
+    </Setting>
+    <Setting Name="Task1Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">У попа была собака Он ее любил Она съела кусок мяса Он ее убил И в землю закопал И надпись написал</Value>
+    </Setting>
+    <Setting Name="Task2Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Дана строка, состоящая из слов, разделенных пробелами. Определить, сколько в строке слов, содержащих четное число символов.</Value>
+    </Setting>
+    <Setting Name="Task2Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Строки в C# это не простые переменные типа int или bool. Когда мы объявляем какую-либо переменную, то система сразу знает сколько памяти необходимо выделить для хранения значения. Как в этом случае системе быть со строками? Каждый символ в строке занимает 2 байта, но количество символов может быть разным.</Value>
+    </Setting>
+    <Setting Name="Task3Description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Дан текстовый файл F. Найти предложение с максимальным количеством слов, состоящих из N символов. Если таких предложений с максимальным количеством слов несколько, найти их все. Переписать эти предложения в другой файл G.</Value>
+    </Setting>
+    <Setting Name="Task3Text" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Вскоре после маленькой княгини вошел массивный, толстый молодой человек с стриженою головой, в очках, светлых панталонах по тогдашней моде, с высоким жабо и в коричневом фраке. Этот толстый молодой человек был незаконный сын знаменитого Екатерининского вельможи, графа Безухого, умиравшего теперь в Москве. Он нигде не служил еще, только что приехал из-за границы, где он воспитывался, и был в первый раз в обществе. Анна Павловна приветствовала его поклоном, относящимся к людям самой низшей иерархии в ее салоне. Но, несмотря на это низшее по своему сорту приветствие, при виде вошедшего Пьера в лице Анны Павловны изобразилось беспокойство и страх, подобный тому, который выражается при виде чего-нибудь слишком огромного и несвойственного месту. Хотя, действительно, Пьер был несколько больше других мужчин в комнате, но этот страх мог относиться только к тому умному и вместе робкому, наблюдательному и естественному взгляду, отличавшему его от всех в этой гостиной.</Value>
+    </Setting>
+    <Setting Name="Task4Description" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Реализовать проверку данного натурального числа на простоту с помощью решета Эратосфена и сравнить его со скоростью работы метода прямой проверки, перебирающей возможные дели-тели.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
