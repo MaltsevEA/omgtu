@@ -1,20 +1,50 @@
 package ru.omgtu.zivt132.lab2;
 
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * 
- * Вариант 12: Проверить существуют ли в тексте цифры, за которыми не стоит "+" (пример правильных выражений: (3 + 5) – 9 * 4, пример неправильных выражений: 2 * 9 – 6 * 5)
+ * Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° в„–2 - РћР±СЂР°Р±РѕС‚РєР° СЃС‚СЂРѕРє, РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ СЂРµРіСѓР»СЏСЂРЅС‹С… РІС‹СЂР°Р¶РµРЅРёР№ РІ java-РїСЂРёР»РѕР¶РµРЅРёСЏС…. 
+ * Р’Р°СЂРёР°РЅС‚ в„–12: РџСЂРѕРІРµСЂРёС‚СЊ СЃСѓС‰РµСЃС‚РІСѓСЋС‚ Р»Рё РІ С‚РµРєСЃС‚Рµ С†РёС„СЂС‹, Р·Р° РєРѕС‚РѕСЂС‹РјРё РЅРµ СЃС‚РѕРёС‚ "+" (РїСЂРёРјРµСЂ РїСЂР°РІРёР»СЊРЅС‹С… РІС‹СЂР°Р¶РµРЅРёР№: (3 + 5) вЂ“ 9 * 4, РїСЂРёРјРµСЂ РЅРµРїСЂР°РІРёР»СЊРЅС‹С… РІС‹СЂР°Р¶РµРЅРёР№: 2 * 9 вЂ“ 6 * 5)
  * 
- * @author Мальцев Евгений Алексеевич, ОмГТУ, ЗИВТ-132  
- * @version 1.0 15/09/2015
+ * @author РњР°Р»СЊС†РµРІ Р•РІРіРµРЅРёР№ РђР»РµРєСЃРµРµРІРёС‡
+ * @version 1.0 29/09/2015
  */
 public class variant12 {
 
+	private static Scanner console;
+
+
+	/**
+	 * 
+	 * РџСЂРѕРІРµСЂРєР° СЃС‚СЂРѕРєРё РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРµ
+	 * @param inputString String
+	 * @return Boolean
+	 */
+	public static boolean checkString(String inputString){	
+        Pattern pattern = Pattern.compile("\\d.?\\+");  
+        Matcher matcher = pattern.matcher(inputString);  
+        return matcher.find();  
+	} 	
+	
+	
 	/**
 	 * @param args String
 	 */	
 	public static void main(String[] args) {
 
-		System.out.println("Lab2");
+		System.out.println("Enter text:\n");
+		
+		console = new Scanner(System.in);
+		
+		String enterString = console.nextLine();
+			
+		if (checkString(enterString)) {
+			System.out.println("\nThe entered text is checked...");
+		} else {
+			System.out.println("\nThe text entered does not pass the test...");			
+		}
 	}
-
 }
